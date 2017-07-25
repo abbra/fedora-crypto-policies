@@ -10,7 +10,7 @@ if (!defined ${output_dir}) {
     exit 1;
 }
 
-my $libdir = "back-ends/";
+my $libdir = "./back-ends/";
 use lib "back-ends/";
 
 my @profiles = ("EMPTY", "DEFAULT", "FUTURE", "LEGACY");

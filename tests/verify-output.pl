@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-my $libdir = "back-ends/";
+my $libdir = "./back-ends/";
 use lib "back-ends/";
 
 my @profiles = ("DEFAULT", "FUTURE", "LEGACY");
