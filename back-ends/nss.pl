@@ -31,6 +31,7 @@ my %mac_map = (
 my %hash_map = (
 	'SHA1'     => 'SHA1',
 	'MD5'      => 'MD5',
+	'SHA2-224' => 'SHA224',
 	'SHA2-256' => 'SHA256',
 	'SHA2-384' => 'SHA384',
 	'SHA2-512' => 'SHA512',
