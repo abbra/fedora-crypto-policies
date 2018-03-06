@@ -181,7 +181,9 @@ FILES
 	XXX is any arbitrary identifier. For example, to append a line to
 	GnuTLS' generated policy, create a gnutls-extra-line.config file in
 	local.d. This will be appended to the generated gnutls.config during
-	update-crypto-policies.
+	update-crypto-policies. These overrides, rely on internal implementation
+	details of update-crypto-policies and are not functional on all supported
+	back-ends.
 
 AUTHOR
 ------
