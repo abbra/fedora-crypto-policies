@@ -43,6 +43,7 @@ sub update_lists {
     $min_dtls_version = 'DTLS1.2';
 
     # Parameter sizes
+    $sec_bits = 112;
     $min_dh_size = 3072;
     $min_dsa_size = 3072;
     $min_rsa_size = 3072;

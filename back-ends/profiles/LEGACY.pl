@@ -41,6 +41,7 @@ sub update_lists {
     $min_dtls_version = 'TLS1.0';
 
     # Parameter sizes
+    $sec_bits = 64;
     $min_dh_size = 1023;
     $min_dsa_size = 1023;
     $min_rsa_size = 1023;

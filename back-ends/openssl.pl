@@ -125,6 +125,24 @@ sub generate_temp_policy() {
 	append('!SSLv2');
 	append('!ADH');
 
+	# SECLEVEL bit and security level calculations
+	# do not align 100% with our levels, and they
+	# combine may aspects of policy (e.g., increasing
+	# level will disable DH instead of key sizes).
+	#
+	# 0: 80-bits
+	# 1: 112: 512-bit DH allowed
+	# 2: 128 (no-ssl3): all DH disallowed
+	# 3: 192 TLS1.1+
+	# 4: 256 TLS1.2+
+	if ($sec_bits < 80) {
+		append('@SECLEVEL=0');
+	} elsif ($sec_bits < 112) {
+		append('@SECLEVEL=1');
+	} else {
+		append('@SECLEVEL=3');
+	}
+
 	return $string;
 }
 

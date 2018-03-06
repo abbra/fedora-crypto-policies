@@ -15,6 +15,7 @@ sub update_lists {
     $min_dtls_version = '';
 
     # Parameter sizes
+    $sec_bits = 0;
     $min_dh_size = 0;
     $min_dsa_size = 0;
     $min_rsa_size = 0;

@@ -7,7 +7,7 @@ BEGIN {
     require Exporter;
     our $VERSION = 1.00;
     our @ISA = qw(Exporter);
-    our @EXPORT = qw(@full_hash_list @full_protocol_list @full_mac_list @full_group_list @full_sign_list @full_tls_cipher_list @full_cipher_list @full_key_exchange_list $min_tls_version $min_dtls_version $min_dsa_size @hash_list @hash_not_list @ike_protocol_list @ike_protocol_not_list @protocol_list @protocol_not_list $min_dh_size $min_rsa_size @mac_list @mac_not_list @group_list @curve_not_list @sign_list @sign_not_list @cipher_list @tls_cipher_list @cipher_not_list @tls_cipher_not_list @key_exchange_list @key_exchange_not_list update_rev_lists);
+    our @EXPORT = qw(@full_hash_list @full_protocol_list @full_mac_list @full_group_list @full_sign_list @full_tls_cipher_list @full_cipher_list @full_key_exchange_list $sec_bits $min_tls_version $min_dtls_version $min_dsa_size @hash_list @hash_not_list @ike_protocol_list @ike_protocol_not_list @protocol_list @protocol_not_list $min_dh_size $min_rsa_size @mac_list @mac_not_list @group_list @curve_not_list @sign_list @sign_not_list @cipher_list @tls_cipher_list @cipher_not_list @tls_cipher_not_list @key_exchange_list @key_exchange_not_list update_rev_lists);
 }
 
 our @full_hash_list = ('SHA2-256', 'SHA2-384', 'SHA2-512', 'SHA3-256', 'SHA3-384', 'SHA3-512', 'SHA1', 'MD5', 'GOST');
@@ -73,6 +73,7 @@ our $min_tls_version;
 our $min_dtls_version;
 
 # Parameter sizes
+our $sec_bits;
 our $min_dh_size;
 our $min_dsa_size;
 our $min_rsa_size;

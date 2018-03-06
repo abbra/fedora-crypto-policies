@@ -51,6 +51,7 @@ sub update_lists {
     $min_dh_size = 2048;
     $min_dsa_size = 2048;
     $min_rsa_size = 2048;
+    $sec_bits = 80;
 
     update_rev_lists();
 }
